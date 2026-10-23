@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Consultoria Fluxo | Consultoria estratégica, M&amp;A e IA para negócios</title>
+<meta name="description" content="Consultoria estratégica para fundadores, conselhos e executivos: M&A, estruturação e modelagem de negócios, estratégia, processos, IA para negócios e controladoria.">
+<link rel="canonical" href="https://www.consultoriafluxo.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Consultoria Fluxo | Consultoria estratégica">
+<meta property="og:description" content="Estratégia com rigor para decisões que definem o valor da sua empresa.">
+<meta property="og:image" content="https://www.consultoriafluxo.com.br/assets/img/alvaro-perfil.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#112546">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23112546'/%3E%3Cpath d='M8 7h6l10 18h-6z' fill='%23fff'/%3E%3Cpath d='M24 7h-5L9 25h5z' fill='%235E86C1'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Consultoria Fluxo","url":"https://www.consultoriafluxo.com.br","email":"alvaro@consultoriafluxo.com.br","telephone":"+55-71-99712-3637","founder":{"@type":"Person","name":"Álvaro Bragança"},"address":{"@type":"PostalAddress","streetAddress":"Av. da França, S/N, Comércio","addressLocality":"Salvador","addressRegion":"BA","postalCode":"40010-000","addressCountry":"BR"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500&family=Albert+Sans:wght@400;500;600&family=Saira:wght@500;600;700&display=swap">
+<style>
+/* Layout: strategy-firm editorial. White pages, hairline rules, serif statements, one navy band per act; the brand's halftone + diagonal cut appear only in the closing band. Bold moment = the hero's "key questions" column. */
+:root{
+  --navy:#112546;        /* Pantone 655 C */
+  --navy-2:#1a3461;
+  --blue:#5E86C1;        /* Pantone 4150 C */
+  --blue-soft:#a9c0e2;
+  --paper:#ffffff;
+  --mist:#f3f5f9;        /* neutral biased to brand blue */
+  --ink:#121c2e;
+  --ink-2:#4d5a70;
+  --line:#dbe1eb;
+  --wa:#1f8f55;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Albert Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --label:"Saira","Arial Narrow",system-ui,sans-serif;
+  --wrap:1200px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.012em;color:var(--navy)}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.label{font:600 .74rem/1.2 var(--label);letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:2px}
+
+.btn{display:inline-flex;align-items:center;gap:.6em;font:600 .95rem/1 var(--sans);text-decoration:none;padding:1rem 1.4rem;border-radius:2px;transition:background .15s ease,color .15s ease,box-shadow .15s ease}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-line{color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#187546}
+.link{font-weight:600;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--blue);padding-bottom:2px}
+.link:hover{color:var(--blue)}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:16px}
+.top img{height:36px;width:auto}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{color:var(--ink-2);text-decoration:none;font:500 .93rem/1 var(--sans)}
+.nav a:hover{color:var(--navy)}
+.nav .btn{padding:.75rem 1.1rem;font-size:.88rem;color:#fff}
+@media (max-width:900px){.nav a:not(.btn){display:none}}
+
+/* Hero */
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:72px;padding-block:96px 88px;align-items:start}
+.hero h1{font-size:clamp(2.5rem,5.2vw,4.4rem);font-weight:300;margin-top:22px;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--blue)}
+.hero .lede{margin-top:28px;max-width:33em;font-size:1.18rem;color:var(--ink-2)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+.questions{border-top:2px solid var(--navy);padding-top:22px;min-width:0}
+.questions ol{list-style:none;margin:18px 0 0;padding:0}
+.questions li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.questions q{quotes:none;font:400 1.14rem/1.35 var(--serif);color:var(--ink)}
+.questions span{font:600 .7rem/1 var(--label);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+@media (max-width:960px){.hero .wrap{grid-template-columns:1fr;gap:56px;padding-block:64px}}
+
+/* Clients */
+.clients{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--mist)}
+.clients .wrap{padding-block:56px}
+.clients-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 32px;margin-bottom:32px}
+.clients-head p{font:400 1.25rem/1.35 var(--serif);color:var(--navy);max-width:32em}
+.logos{display:grid;grid-template-columns:repeat(9,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.logo{background:#fff;display:grid;place-items:center;padding:16px;height:104px;min-width:0}
+.logo img{max-height:52px;width:auto;max-width:100%;object-fit:contain;filter:grayscale(1) contrast(1.05);opacity:.72;mix-blend-mode:multiply;transition:filter .2s ease,opacity .2s ease}
+.logo img.tall{max-height:62px}
+.logo img.faint{filter:grayscale(1) brightness(.55)}
+.logo:hover img{filter:none;opacity:1}
+@media (max-width:1100px){.logos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.logos{grid-template-columns:repeat(3,1fr)}.logo{padding:12px 10px;height:84px}.logo img{max-height:40px}}
+
+/* Section scaffold */
+section{scroll-margin-top:84px}
+.sec{padding-block:112px}
+.sec-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:end;margin-bottom:64px}
+.sec-head h2{font-size:clamp(2rem,3.6vw,3rem);margin-top:16px}
+.sec-head p{color:var(--ink-2);max-width:36em;font-size:1.08rem}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr;gap:18px;margin-bottom:44px}.sec{padding-block:80px}}
+
+/* Practices */
+.practices{border-top:2px solid var(--navy)}
+.practice{display:grid;grid-template-columns:4.5rem 1.05fr 1fr 1.05fr;gap:32px;padding:34px 0;border-bottom:1px solid var(--line);align-items:start}
+.practice .code{font:600 .8rem/1.6 var(--label);letter-spacing:.12em;color:var(--blue)}
+.practice h3{font-size:1.65rem;line-height:1.15}
+.practice .what{color:var(--ink-2);min-width:0}
+.practice ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;min-width:0}
+.practice li{font-size:.95rem;padding-left:18px;position:relative}
+.practice li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1.5px;background:var(--blue)}
+@media (max-width:960px){.practice{grid-template-columns:3.5rem 1fr;gap:12px 20px}.practice .what,.practice ul{grid-column:2}}
+@media (max-width:480px){.practice{grid-template-columns:1fr}.practice .what,.practice ul{grid-column:1}}
+
+/* Approach */
+.approach{background:var(--navy);color:#fff}
+.approach h2{color:#fff}
+.approach .sec-head p{color:#c3d1e6}
+.approach .label{color:var(--blue-soft)}
+.phases{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.25)}
+.phase{padding:30px 28px 0 0;min-width:0;position:relative}
+.phase+.phase{padding-left:28px;border-left:1px solid rgba(255,255,255,.14)}
+.phase .n{font:600 .78rem/1 var(--label);letter-spacing:.16em;color:var(--blue-soft)}
+.phase h3{color:#fff;font-size:1.5rem;margin:14px 0 12px}
+.phase p{color:#c3d1e6;font-size:.97rem}
+.phase .out{margin-top:18px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.2);font-size:.88rem;color:#fff}
+.phase .out b{display:block;font:600 .68rem/1 var(--label);letter-spacing:.16em;text-transform:uppercase;color:var(--blue-soft);margin-bottom:6px}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:80px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14)}
+.principles h3{color:#fff;font-size:1.25rem;margin-bottom:8px}
+.principles p{color:#c3d1e6;font-size:.96rem}
+@media (max-width:960px){.phases{grid-template-columns:1fr 1fr;row-gap:36px}.phase:nth-child(3){padding-left:0;border-left:0}.principles{grid-template-columns:1fr;gap:28px}}
+@media (max-width:540px){.phases{grid-template-columns:1fr}.phase,.phase+.phase{padding-left:0;border-left:0}}
+
+/* Founder */
+.founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.founder figure{margin:0;position:relative}
+.founder figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:2px}
+.founder figcaption{margin-top:14px;font-size:.88rem;color:var(--ink-2)}
+.founder h2{font-size:clamp(2rem,3.6vw,3rem);margin-top:16px}
+.founder .intro{margin-top:22px;font:400 1.25rem/1.5 var(--serif);color:var(--ink);max-width:32em}
+.career{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.career li{display:grid;grid-template-columns:11rem 1fr;gap:24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.career b{font:600 .95rem/1.5 var(--sans);color:var(--navy)}
+.career span{color:var(--ink-2);font-size:.97rem;min-width:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.tags span{font:500 .82rem/1 var(--sans);color:var(--navy);padding:9px 12px;border:1px solid var(--line);border-radius:2px;background:var(--mist)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:2px solid var(--navy)}
+.stat{padding:22px 20px 0 0;min-width:0}
+.stat+.stat{padding-left:20px;border-left:1px solid var(--line)}
+.stat b{display:block;font:300 clamp(2rem,3.4vw,2.8rem)/1 var(--serif);color:var(--navy);font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:10px;font-size:.9rem;color:var(--ink-2)}
+@media (max-width:960px){.founder{grid-template-columns:1fr;gap:44px}.founder figure{max-width:420px}}
+@media (max-width:560px){.career li{grid-template-columns:1fr;gap:4px}.stats{grid-template-columns:1fr}.stat,.stat+.stat{padding:18px 0;border-left:0;border-bottom:1px solid var(--line)}}
+
+/* Contact */
+.contact{position:relative;background:linear-gradient(150deg,var(--navy) 45%,var(--navy-2));color:#fff;overflow:hidden;clip-path:polygon(0 0,58% 5%,100% 0,100% 100%,0 100%)}
+.contact .dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.14) 1.2px,transparent 1.7px);background-size:11px 11px;-webkit-mask-image:linear-gradient(110deg,transparent 40%,#000 100%);mask-image:linear-gradient(110deg,transparent 40%,#000 100%)}
+.contact .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:72px;padding-block:136px 88px}
+.contact .label{color:var(--blue-soft)}
+.contact h2{color:#fff;font-size:clamp(2.2rem,4.4vw,3.6rem);font-weight:300;margin-top:18px}
+.contact h2 em{font-style:italic;color:var(--blue-soft)}
+.contact .lede{color:#c3d1e6;margin-top:22px;max-width:32em;font-size:1.1rem}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.contact .btn-ghost{color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.contact .btn-ghost:hover{box-shadow:inset 0 0 0 1px #fff}
+.info{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.25);align-self:start}
+.info li{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.info .label{display:block;margin-bottom:8px}
+.info a,.info p{color:#fff;text-decoration:none;font-size:1.02rem;word-break:break-word}
+.info a:hover{text-decoration:underline}
+@media (max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:40px;padding-block:104px 64px}}
+
+footer{background:#0b1a33;color:#8ea3c4;font-size:.86rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:26px}
+footer img{height:28px;width:auto}
+
+/* Floating WhatsApp */
+.wa-float{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font:600 .92rem/1 var(--sans);padding:14px 18px 14px 14px;border-radius:999px;box-shadow:0 10px 30px -8px rgba(17,37,70,.5);transition:transform .15s ease,background .15s ease}
+.wa-float:hover{transform:translateY(-2px);background:#187546}
+.wa-float svg{width:26px;height:26px;flex:none}
+@media (max-width:560px){.wa-float span{display:none}.wa-float{padding:14px;border-radius:50%}}
+
+@media (prefers-reduced-motion:no-preference){
+  .hero h1,.hero .lede,.hero .ctas,.questions{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .hero .lede{animation-delay:.08s}.hero .ctas{animation-delay:.14s}.questions{animation-delay:.22s}
+  @keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-float,.logo img{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#inicio" aria-label="Consultoria Fluxo, início"><img src="assets/img/logo-azul.png" alt="Consultoria Fluxo" width="84" height="36"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#atuacao">Atuação</a>
+      <a href="#abordagem">Abordagem</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#fundador">Fundador</a>
+      <a class="btn btn-navy" href="#contato">Agendar conversa</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="label">Consultoria estratégica</p>
+        <h1>Estratégia com rigor para decisões que <em>definem o valor</em> da sua empresa.</h1>
+        <p class="lede">A Fluxo apoia fundadores, conselhos e executivos em crescimento, transações e transformação. Unimos método de consultoria global, profundidade em finanças corporativas e execução próxima do negócio.</p>
+        <div class="ctas">
+          <a class="btn btn-navy" href="#contato">Discutir um desafio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#atuacao">Ver áreas de atuação</a>
+        </div>
+      </div>
+      <aside class="questions" aria-label="Perguntas que ajudamos a responder">
+        <p class="label">Perguntas que levamos à mesa</p>
+        <ol>
+          <li><span>Estratégia</span><q>Qual é o tamanho real do nosso mercado, e onde está o valor?</q></li>
+          <li><span>M&amp;A</span><q>Quanto vale a empresa, e qual o melhor momento para vender ou comprar?</q></li>
+          <li><span>Modelagem</span><q>Este novo negócio fecha a conta? Com que premissas?</q></li>
+          <li><span>IA para negócios</span><q>Onde a IA gera margem na nossa operação, e por onde começar?</q></li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="clients" id="clientes" aria-labelledby="clientes-t">
+    <div class="wrap">
+      <div class="clients-head">
+        <p id="clientes-t">Apoiamos companhias de alcance regional e nacional a estruturar e escalar suas operações.</p>
+        <span class="label">Clientes</span>
+      </div>
+      <div class="logos">
+        <div class="logo"><img src="assets/img/clientes/petrobahia.png" alt="Petrobahia" loading="lazy"></div>
+        <div class="logo"><img src="assets/img/clientes/prima.png" alt="Prima Empreendimentos" loading="lazy"></div>
+        <div class="logo"><img class="tall" src="assets/img/clientes/intermaritima.png" alt="Intermarítima Portos e Logística" loading="lazy"></div>
+        <div class="logo"><img class="tall" src="assets/img/clientes/isb.png" alt="ISB" loading="lazy"></div>
+        <div class="logo"><img src="assets/img/clientes/syntropy.png" alt="Syntropy Agricultura Integrada" loading="lazy"></div>
+        <div class="logo"><img class="tall" src="assets/img/clientes/ppf.png" alt="PPF Advocacia" loading="lazy"></div>
+        <div class="logo"><img class="faint" src="assets/img/clientes/footure.png" alt="Footure Football Company" loading="lazy"></div>
+        <div class="logo"><img src="assets/img/clientes/hike.png" alt="Hike" loading="lazy"></div>
+        <div class="logo"><img class="tall" src="assets/img/clientes/cantina-volpi.png" alt="Cantina Volpi" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="atuacao">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label">Áreas de atuação</p>
+          <h2>Seis práticas, um compromisso: recomendações que se sustentam nos números.</h2>
+        </div>
+        <p>Cada projeto tem escopo, prazo e entregáveis definidos. Combinamos as práticas conforme a pergunta do cliente, da tese de mercado à operação que vai executá-la.</p>
+      </div>
+
+      <div class="practices">
+        <article class="practice">
+          <span class="code">01</span>
+          <h3>M&amp;A</h3>
+          <p class="what">Assessoria em compra, venda e fusão de empresas, do valuation à assinatura.</p>
+          <ul><li>Assessoria buy-side e sell-side</li><li>Valuation técnico e defensável</li><li>Due diligence e data room</li><li>Negociação com fundadores e fundos</li></ul>
+        </article>
+        <article class="practice">
+          <span class="code">02</span>
+          <h3>Estruturação e modelagem de negócios</h3>
+          <p class="what">Transformamos uma tese em um negócio com números de pé, pronto para investidores e conselho.</p>
+          <ul><li>Business plan e modelagem financeira</li><li>Unit economics e modelo de receita</li><li>Venture building</li><li>Materiais para captação com investidores</li></ul>
+        </article>
+        <article class="practice">
+          <span class="code">03</span>
+          <h3>Estratégia</h3>
+          <p class="what">Onde jogar e como vencer: decisões de crescimento ancoradas em dados de mercado.</p>
+          <ul><li>Planejamento estratégico</li><li>Market sizing (TAM, SAM, SOM)</li><li>Go-to-market e pricing</li><li>Planos de expansão e benchmarking</li></ul>
+        </article>
+        <article class="practice">
+          <span class="code">04</span>
+          <h3>Processos</h3>
+          <p class="what">Redesenho da operação para ganhar escala, previsibilidade e eficiência de custos.</p>
+          <ul><li>Diagnóstico e desenho de processos</li><li>Transformação operacional</li><li>Gestão estratégica de custos</li><li>Governança e rituais de gestão</li></ul>
+        </article>
+        <article class="practice">
+          <span class="code">05</span>
+          <h3>IA para negócios</h3>
+          <p class="what">Da estratégia à implementação: casos de uso de IA priorizados pelo valor que geram.</p>
+          <ul><li>Mapa de oportunidades de IA</li><li>Agentes e automações sob medida</li><li>Workshops para lideranças e equipes</li><li>Governança e adoção</li></ul>
+        </article>
+        <article class="practice">
+          <span class="code">06</span>
+          <h3>Controladoria</h3>
+          <p class="what">Informação gerencial confiável para a diretoria e o conselho decidirem com segurança.</p>
+          <ul><li>Orçamento e orçado x realizado</li><li>FP&amp;A e projeções financeiras</li><li>Relatórios gerenciais e KPIs</li><li>Dashboards para o conselho</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec approach" id="abordagem">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label">Abordagem</p>
+          <h2>Começamos pelas perguntas certas. Terminamos com uma recomendação clara.</h2>
+        </div>
+        <p>Método orientado por hipóteses, com checkpoints combinados e entregas semanais. Você acompanha o raciocínio do começo ao fim, sem caixa-preta.</p>
+      </div>
+      <div class="phases">
+        <div class="phase"><span class="n">FASE 1</span><h3>Imersão</h3><p>Entendemos o negócio, os materiais existentes e estruturamos a árvore de questões-chave.</p><p class="out"><b>Saída</b>Perguntas e premissas validadas</p></div>
+        <div class="phase"><span class="n">FASE 2</span><h3>Análise</h3><p>Dados públicos, benchmark competitivo e modelagem, com abordagens top-down e bottom-up que precisam convergir.</p><p class="out"><b>Saída</b>Modelo aberto e documentado</p></div>
+        <div class="phase"><span class="n">FASE 3</span><h3>Recomendação</h3><p>Síntese executiva com cenários, riscos e a decisão recomendada, discutida com a liderança.</p><p class="out"><b>Saída</b>Deck executivo para o conselho</p></div>
+        <div class="phase"><span class="n">FASE 4</span><h3>Implementação</h3><p>Apoiamos a execução: plano de ação, governança e acompanhamento dos indicadores.</p><p class="out"><b>Saída</b>Plano de ação e rituais de gestão</p></div>
+      </div>
+      <div class="principles">
+        <div><h3>Senioridade no projeto</h3><p>Todo trabalho é conduzido diretamente pelo fundador, do kick-off à apresentação final.</p></div>
+        <div><h3>Números que se sustentam</h3><p>Cada premissa tem fonte, racional e faixa (conservador, base e otimista).</p></div>
+        <div><h3>Escopo e prazo fechados</h3><p>Projetos orientados por entregas, com investimento definido antes do início.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="fundador">
+    <div class="wrap founder">
+      <figure>
+        <img src="assets/img/alvaro-perfil.jpg" alt="Álvaro Bragança, fundador da Consultoria Fluxo" width="1000" height="1500">
+        <figcaption>Álvaro Bragança · Fundador e sócio-diretor</figcaption>
+      </figure>
+      <div>
+        <p class="label">Fundador</p>
+        <h2>Álvaro Bragança</h2>
+        <p class="intro">Trajetória em estratégia, M&amp;A e planos de expansão, construída entre consultoria global, private equity e gestão de empresas.</p>
+        <ul class="career">
+          <li><b>McKinsey &amp; Company</b><span>Projetos de estratégia e transformação operacional na América Latina.</span></li>
+          <li><b>Newbay</b><span>Gerente executivo de private equity e M&amp;A: valuations, planos de expansão e negociação com fundadores.</span></li>
+          <li><b>Squadra Sports</b><span>CFO, com governança financeira, aquisições e captação com investidores nacionais e internacionais.</span></li>
+          <li><b>Ambev e E.C. Bahia</b><span>Estratégia comercial e governança.</span></li>
+          <li><b>Formação</b><span>Engenharia Elétrica pela UFBA.</span></li>
+        </ul>
+        <div class="tags" aria-label="Áreas de expertise">
+          <span>Market sizing</span><span>Go-to-market</span><span>M&amp;A e valuation</span><span>Private equity</span><span>Venture building</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>+R$ 100M</b><span>em operações de M&amp;A e captação estruturadas</span></div>
+          <div class="stat"><b>+50</b><span>valuations de empresas realizados</span></div>
+          <div class="stat"><b>+10</b><span>empresas estruturadas do zero</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <div class="dots"></div>
+    <div class="wrap">
+      <div>
+        <p class="label">Contato</p>
+        <h2>Qual é a próxima <em>grande decisão</em> da sua empresa?</h2>
+        <p class="lede">Conte o contexto em uma conversa inicial, sem compromisso. Se fizer sentido, voltamos com uma proposta de escopo, prazo e investimento.</p>
+        <div class="ctas">
+          <a class="btn btn-wa" href="https://wa.me/5571997123637?text=Ol%C3%A1%2C%20%C3%81lvaro.%20Vim%20pelo%20site%20da%20Consultoria%20Fluxo%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Conversar no WhatsApp</a>
+          <a class="btn btn-ghost" href="mailto:alvaro@consultoriafluxo.com.br">Enviar e-mail</a>
+        </div>
+      </div>
+      <ul class="info">
+        <li><span class="label">E-mail</span><a href="mailto:alvaro@consultoriafluxo.com.br">alvaro@consultoriafluxo.com.br</a></li>
+        <li><span class="label">WhatsApp</span><p>(71) 9 9712-3637</p></li>
+        <li><span class="label">Escritório</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+da+Fran%C3%A7a+Com%C3%A9rcio+Salvador+BA+40010-000" target="_blank" rel="noopener">Av. da França, S/N · Comércio<br>Salvador, BA · CEP 40010-000</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/img/logo-branca.png" alt="Consultoria Fluxo" width="66" height="28">
+    <span>© 2026 Consultoria Fluxo</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5571997123637?text=Ol%C3%A1%2C%20%C3%81lvaro.%20Vim%20pelo%20site%20da%20Consultoria%20Fluxo%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+</body>
+</html>
