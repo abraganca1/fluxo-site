@@ -11,6 +11,7 @@
 - Autenticação já configurada localmente via Git Credential Manager (token fine-grained da conta `abraganca1`, escopo só deste repositório). Não há token em nenhum arquivo da pasta.
 - Identidade dos commits: `Consultoria Fluxo <alvaro@consultoriafluxo.com.br>` (configurada só neste repositório, não afeta outros projetos).
 - Para publicar: `git add -A && git commit -m "..." && git push origin main` dentro de `3_Site/`.
+- Esta máquina tem mais de uma conta GitHub salva no Credential Manager, então o `git push` pode abrir uma janela "Select an account". Para evitar isso e usar direto o token da `abraganca1`, rode com a variável de ambiente: `GCM_GITHUB_AUTHMODES=pat git push origin main`.
 
 ## Ordem das seções (igual à apresentação v8)
 Capa · Quem somos (com os 4 números) · Clientes · Áreas de atuação (6 cards-resumo) · Abordagem (4 fases) · Formato dos projetos (novo, antes não existia no site) · Fundador (lista de trajetória com logos) · Contato · Apêndice (o que cada prática entrega, com os bullets detalhados — antes era a seção principal "Áreas de atuação").
