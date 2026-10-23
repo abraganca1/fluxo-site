@@ -20,7 +20,7 @@
 Não precisa de token. Na primeira publicação, o `git push` vai abrir uma janela do GitHub pedindo login — ele entra com a própria conta `abraganca1` uma vez, e a máquina lembra depois disso.
 
 ### No computador do Gabriel
-Já configurado com um token fine-grained (escopo só deste repositório), guardado no Credential Manager — não fica em nenhum arquivo da pasta. Como essa máquina tem mais de uma conta GitHub salva, o `git push` pode abrir uma janela "Select an account"; para evitar isso e usar direto o token, rode com a variável de ambiente: `GCM_GITHUB_AUTHMODES=pat git push origin main`.
+Já configurado com um token fine-grained (escopo só deste repositório), guardado no Credential Manager — não fica em nenhum arquivo da pasta. Como essa máquina tem mais de uma conta GitHub salva, o `git push` pode abrir uma janela "Select an account" mesmo assim; para evitar isso, rode com a variável de ambiente `GCM_GITHUB_AUTHMODES=pat git push origin main`. Se ainda assim abrir a janela, feche-a e rode o push de novo (`taskkill /F /IM git-credential-manager.exe` fecha a janela travada) — às vezes é preciso tentar duas vezes.
 
 ## Ordem das seções (v5)
 Capa · Quem somos (4 números) · Clientes · Práticas (6 caixas clicáveis → `praticas/`) · Abordagem (4 fases) · Formato dos projetos · Fundador · Contato.
