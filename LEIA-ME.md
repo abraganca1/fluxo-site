@@ -8,10 +8,15 @@
 
 ## Publicação (GitHub Pages)
 - Esta pasta (`3_Site/`) é um repositório git local com remoto em `https://github.com/abraganca1/fluxo-site` (branch `main`), publicado via GitHub Pages com domínio customizado (`CNAME` → www.consultoriafluxo.com.br).
-- Autenticação já configurada localmente via Git Credential Manager (token fine-grained da conta `abraganca1`, escopo só deste repositório). Não há token em nenhum arquivo da pasta.
-- Identidade dos commits: `Consultoria Fluxo <alvaro@consultoriafluxo.com.br>` (configurada só neste repositório, não afeta outros projetos).
+- A autenticação com o GitHub é por **máquina**, não por arquivo: cada computador guarda sua própria credencial no Credential Manager do Windows (ou equivalente), que **não** sincroniza pelo OneDrive. `.git/config` (sincronizado) só guarda o endereço do repositório, não segredos.
+- Identidade dos commits: `Consultoria Fluxo <alvaro@consultoriafluxo.com.br>` (configurada só neste repositório, não afeta outros projetos — vale nos dois computadores assim que o OneDrive sincronizar).
 - Para publicar: `git add -A && git commit -m "..." && git push origin main` dentro de `3_Site/`.
-- Esta máquina tem mais de uma conta GitHub salva no Credential Manager, então o `git push` pode abrir uma janela "Select an account". Para evitar isso e usar direto o token da `abraganca1`, rode com a variável de ambiente: `GCM_GITHUB_AUTHMODES=pat git push origin main`.
+
+### No computador do Álvaro (dono da conta `abraganca1`)
+Não precisa de token. Na primeira publicação, o `git push` vai abrir uma janela do GitHub pedindo login — ele entra com a própria conta `abraganca1` uma vez, e a máquina lembra depois disso.
+
+### No computador do Gabriel
+Já configurado com um token fine-grained (escopo só deste repositório), guardado no Credential Manager — não fica em nenhum arquivo da pasta. Como essa máquina tem mais de uma conta GitHub salva, o `git push` pode abrir uma janela "Select an account"; para evitar isso e usar direto o token, rode com a variável de ambiente: `GCM_GITHUB_AUTHMODES=pat git push origin main`.
 
 ## Ordem das seções (igual à apresentação v8)
 Capa · Quem somos (com os 4 números) · Clientes · Áreas de atuação (6 cards-resumo) · Abordagem (4 fases) · Formato dos projetos (novo, antes não existia no site) · Fundador (lista de trajetória com logos) · Contato · Apêndice (o que cada prática entrega, com os bullets detalhados — antes era a seção principal "Áreas de atuação").
