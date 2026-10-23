@@ -6,6 +6,12 @@
 - `assets/img/carreira/`: logos da trajetória do fundador (McKinsey, Newbay, Squadra Sports, Ambev, Esporte Clube Bahia, UFBA), extraídos da apresentação v8.
 - Prévia local: `.claude/launch.json` na raiz da área sobe um servidor estático (`npx serve`) na porta 4173 para visualizar com os caminhos relativos funcionando.
 
+## Publicação (GitHub Pages)
+- Esta pasta (`3_Site/`) é um repositório git local com remoto em `https://github.com/abraganca1/fluxo-site` (branch `main`), publicado via GitHub Pages com domínio customizado (`CNAME` → www.consultoriafluxo.com.br).
+- Autenticação já configurada localmente via Git Credential Manager (token fine-grained da conta `abraganca1`, escopo só deste repositório). Não há token em nenhum arquivo da pasta.
+- Identidade dos commits: `Consultoria Fluxo <alvaro@consultoriafluxo.com.br>` (configurada só neste repositório, não afeta outros projetos).
+- Para publicar: `git add -A && git commit -m "..." && git push origin main` dentro de `3_Site/`.
+
 ## Ordem das seções (igual à apresentação v8)
 Capa · Quem somos (com os 4 números) · Clientes · Áreas de atuação (6 cards-resumo) · Abordagem (4 fases) · Formato dos projetos (novo, antes não existia no site) · Fundador (lista de trajetória com logos) · Contato · Apêndice (o que cada prática entrega, com os bullets detalhados — antes era a seção principal "Áreas de atuação").
 
