@@ -1,6 +1,10 @@
 # Site Consultoria Fluxo
 
-- `index.html`: site one-page, **versão 3 (22/10/2026)**, espelhando ordem, conteúdo e layout da `2_Apresentacao_Institucional/20261021_Apresentacao_Institucional_Consultoria_Fluxo_v8 [versao Claude].pdf`. Abre direto no navegador.
+- **Versão 5 (22/10/2026) [versao Claude], ainda NÃO publicada.** Segue o Design System Fluxo v1 (`1_Marca/Design System - Fluxo/`) e usa só o conteúdo da apresentação v8. A v3 e a v4 estão em `99_ARQUIVO/Site_versoes_antigas/`.
+- `index.html`: página inicial. As 6 práticas viraram caixas clicáveis que levam às páginas de detalhamento.
+- `praticas/*.html`: uma página por prática (M&A, Estruturação e modelagem, Estratégia, Processos, IA para negócios, Controladoria), com visão geral, o que entregamos, números, quando faz sentido, quem conduz, como trabalhamos e links para as outras práticas.
+- `assets/css/fluxo.css` e `assets/js/fluxo.js`: estilo e animações compartilhados por todas as páginas (as animações são desligadas para quem ativa "reduzir movimento" no sistema).
+- `_fonte/build.py`: gera o `index.html` e as páginas de prática a partir de um único texto. Para mudar textos das práticas, edite a lista `P` e rode `python _fonte/build.py` dentro de `3_Site` (a pasta `_fonte` não é publicada pelo GitHub Pages).
 - `assets/img/`: fotos do ensaio + logos (`logo-azul.png` para fundo branco, `logo-branca.png` para fundo azul).
 - `assets/img/clientes/`: logos de clientes (`ppf.png` não é mais usado — cliente saiu da lista vigente; `inhire.png` foi extraído da apresentação v8).
 - `assets/img/carreira/`: logos da trajetória do fundador (McKinsey, Newbay, Squadra Sports, Ambev, Esporte Clube Bahia, UFBA), extraídos da apresentação v8.
@@ -18,8 +22,8 @@ Não precisa de token. Na primeira publicação, o `git push` vai abrir uma jane
 ### No computador do Gabriel
 Já configurado com um token fine-grained (escopo só deste repositório), guardado no Credential Manager — não fica em nenhum arquivo da pasta. Como essa máquina tem mais de uma conta GitHub salva, o `git push` pode abrir uma janela "Select an account"; para evitar isso e usar direto o token, rode com a variável de ambiente: `GCM_GITHUB_AUTHMODES=pat git push origin main`.
 
-## Ordem das seções (igual à apresentação v8)
-Capa · Quem somos (com os 4 números) · Clientes · Áreas de atuação (6 cards-resumo) · Abordagem (4 fases) · Formato dos projetos (novo, antes não existia no site) · Fundador (lista de trajetória com logos) · Contato · Apêndice (o que cada prática entrega, com os bullets detalhados — antes era a seção principal "Áreas de atuação").
+## Ordem das seções (v5)
+Capa · Quem somos (4 números) · Clientes · Práticas (6 caixas clicáveis → `praticas/`) · Abordagem (4 fases) · Formato dos projetos · Fundador · Contato.
 
 ## Decisões de adaptação (site vs. deck)
 - Paleta e tipografia (Source Serif 4 / Albert Sans / Saira) do sistema do site foram **mantidas**, não trocadas pela fonte sans-serif genérica do PDF exportado — é o sistema de marca digital já validado.
